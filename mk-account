@@ -1,0 +1,4 @@
+#!/bin/bash
+cwd=$(pwd)
+source base.sh
+run . cabal_install ./codeworld-account

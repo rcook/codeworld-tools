@@ -1,0 +1,4 @@
+#!/bin/bash
+cwd=$(pwd)
+source base.sh
+run . cabal repl ./codeworld-server
