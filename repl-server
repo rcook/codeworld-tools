@@ -3,7 +3,8 @@ set -euo pipefail
 
 this_dir=$(cd $(dirname $0); pwd -P)
 
-cwd=$this_dir/codeworld
+parent_dir=$(dirname $this_dir)
+cwd=$parent_dir/codeworld
 cd $cwd
 source base.sh
 cd $cwd/codeworld-server
