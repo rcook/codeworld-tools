@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo pipefail
+
+this_dir=$(cd $(dirname $0); pwd -P)
+
+parent_dir=$(dirname $this_dir)
+cwd=$parent_dir/codeworld
+cd $cwd
+source base.sh
+cd $cwd/codeworld-auth
+run . cabal repl exe:codeworld-auth
